@@ -1,0 +1,177 @@
+/* Обнуление */
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;margin: 0;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: FuturaFuturisLightC;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;font-style: normal;}
+
+/* --------------------------------------------------- */
+
+.container {
+    width: 1230px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+@media (max-width: 991px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+.btn {
+    border-radius: 32px;
+    color: white;
+    background: radial-gradient(82.31% 302.3% at 7.69% 100%, #FF0000 0%, #9C0C0C 100%);
+    font-family: FuturaFuturisBlackC;
+    width: 260px;
+    max-width: 100%;
+    height: 56px;
+    box-shadow: 0px 24px 84px -30px rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-family: FuturaFuturisBlackC;
+    font-size: 32px;
+    color: white;
+    line-height: 36px;
+}
+
+@media (max-width: 600px) {
+    .section-title {
+        font-size: 20px;
+    }
+}
+
+/* Флексы */
+
+.d-flex {
+    display: flex;
+}
+
+.a-i-c {
+    align-items: center;
+}
+
+.j-c-b {
+    justify-content: space-between;
+}
+
+.j-c-c {
+    justify-content: center;
+}
+
+.j-c-a {
+    justify-content: space-around;
+}
+
+.flex-d-column {
+    flex-direction: column;
+}
+
+/* --------------------------------------------------- */
+
+/* Гриды */
+
+.d-grid {
+    display: grid;
+}
+
+.g-c-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.g-c-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.g-c-1-2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+.gap-30-15 {
+    gap: 30px 15px;
+}
+
+/* Текст */
+
+.t-center {
+    text-align: center;
+}
+
+.f-z-10 {
+    font-size: 10px;
+}
+
+.f-z-12 {
+    font-size: 12px;
+}
+
+.f-z-16 {
+    font-size: 16px;
+}
+
+.f-z-18 {
+    font-size: 18px;
+}
+
+.f-z-20 {
+    font-size: 20px;
+}
+
+.f-z-24 {
+    font-size: 24px;
+}
+
+.f-z-32 {
+    font-size: 32px;
+}
+
+.f-z-48 {
+    font-size: 48px;
+}
+
+.t-underline {
+    text-decoration: underline;
+}
+
+/* --------------------------------------------------- */
